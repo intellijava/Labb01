@@ -1,6 +1,7 @@
 /* Mobile first */
+
 body{
-	/*background-color: red;*/
+	background-color: #3BADF5;
 	margin: 20px;
 }
 
@@ -61,23 +62,22 @@ main{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-gap: 20px;
-	/*background-color: blue;*/
+	background-color: #6D07A8;
 }
 
 main article{
-	background-color: yellow;
+	background-color: #CCF514;
 	padding: 20px;
 }
 
 footer{
 	grid-area: footer;
-	background-color: pink;
+	background-color: #A313F5;
 }
-
 /* Desktop */
 @media screen and (min-width: 1025px) {
 	body{
-		/*background-color: gold;*/
+		background-color: white;
 	}
 
 	section.grid-container{
