@@ -1,0 +1,22 @@
+{
+  "promos": [
+    {
+      "country": "Maldives",
+      "price": "8500",
+      "startDate": "2021-08-01",
+      "endDate": "2021-10-01"
+    },
+    {
+      "country": "Spain",
+      "price": "1000",
+      "startDate": "2021-10-01",
+      "endDate": "2021-12-10"
+    },
+    {
+      "country": "Thailand",
+      "price": "1500",
+      "startDate": "2021-10-01",
+      "endDate": "2021-12-10"
+    }
+  ]
+}
