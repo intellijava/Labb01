@@ -17,6 +17,7 @@ new Vue({
     el: '#promoDiv',
     data: {
         newCountry: '',
+        newPrice:'',
         image: 'img/mountainflame-500px.jpg',
         todos: [
             {
