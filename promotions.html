@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" charset="UTF-8">
+    <title>Promotions-TravelWorld</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<section class="grid-container">
+    <header>
+        <h1>Promotions</h1>
+    </header>
+    <div id="promoDiv">
+    <form v-on:submit.prevent="addNewPromo">
+        <label for="new-country">Add a Country</label>
+        <input
+                type="text"
+                v-model="newCountry"
+                id="new-country"
+                placeholder="Country's name"
+        >
+        <label for="new-price">Price per night</label>
+        <input
+                type="text"
+                v-model="newPrice"
+                id="new-price"
+                placeholder="Price "
+        >
+        <label for="newstart-date">Start Date</label>
+        <input
+                v-model="newStartDate"
+                type="date"
+                id="newstart-date"
+        >
+        <label for="newstart-date">End Date</label>
+        <input
+                v-model="newEndDate"
+                type="date"
+                id="newend-date"
+        >
+        <button>Add</button>
+    </form>
+    <main id="promoPages">
+
+                <article
+                        is="promo-item"
+                        v-for="(todo, index) in todos"
+                        v-bind:key='todo.id'
+                        v-bind:country='todo.country'
+                        v-bind:price=todo.price
+                        v-bind:start-date=todo.startDate
+                        v-bind:end-date=todo.endDate
+                        v-bind:img="todo.img"
+                        v-on:remove="todos.splice(index, 1)"
+                ></article>
+    </main>
+    </div>
+    <article><a href="index.html" style="color: black">Back</a></article>
+    <footer>
+        <p>We want you to have the best weeks of the year when you travel with us. We travel to more than 80 countries.
+            You can also book flights around the world, and choose from thousands of quality-assured airlines. We offer
+            shorter city trips for you who just want to be away for a weekend, and you can always make real bargains
+            among our last minute trips. </p>
+        <h2>TravelWorld</h2>
+        <hr>
+        &copy; 2021 All rights reserved
+        <a style="float:right" href="tel:070-000-0000">070-000-0000</a>
+    </footer>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/promos.js"></script>
+</body>
+</html>

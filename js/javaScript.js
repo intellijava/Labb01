@@ -2,6 +2,7 @@ function createNode(element) {
     return document.createElement(element);
 }
 const para = document.querySelector('#para');
+let test = document.querySelector('#test');
 const url = 'data/data.json';
 fetch(url)
     .then((resp) => resp.json())
